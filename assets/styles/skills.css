@@ -1,0 +1,103 @@
+#skills {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  padding-inline: 10px;
+}
+#skills .header-skills {
+  padding: 5px;
+  width: 200px;
+  /* margin-top: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: solid 1px white;
+  background-color: transparent;
+  backdrop-filter: blur(100px);
+}
+#skills .header-skills h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin: 0px;
+  font-size: 24px;
+}
+#skills .skills-container {
+  width: 60%;
+  height: 500px;
+  background-color: #1e222b;
+  box-shadow: 1px 1px 4px rgb(0, 0, 0);
+  border-radius: 14px;
+  margin-top: 20px;
+  padding: 25px;
+}
+@media screen and (max-width: 800px) {
+  #skills .skills-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #skills .skills-container {
+    width: 100%;
+  }
+}
+.skills-container h2 {
+  color: white;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 4px;
+  margin: 0;
+}
+.skills-container .range-container {
+  /* border: 1px solid white; */
+  width: 100%;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.range-container .range {
+  border-radius: 10px;
+  width: 90%;
+  height: 6px;
+  border: solid 1px white;
+}
+
+.indicator p {
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.range .value {
+  background-color: yellow;
+  height: 100%;
+  box-shadow: 1px 1px 10px yellow;
+}
+.range .html {
+  width: 90%;
+}
+.range .css {
+  width: 75%;
+}
+.range .javascript {
+  width: 65%;
+}
+.range .mysql {
+  width: 65%;
+}
+.range .react-native {
+  width: 40%;
+}
+.range .node-js {
+  width: 35%;
+}
+.range .vue {
+  width: 20%;
+}
+#skills * {
+  /* border: solid 1px white; */
+}

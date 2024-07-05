@@ -1,0 +1,57 @@
+main .content {
+  display: flex;
+  flex-direction: column;
+  /* padding-inline: 50px; */
+}
+.content .role p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-block: 2px;
+  font-size: 24px;
+}
+.content .photo-profile {
+  border: solid white 1px;
+  margin-top: 150px;
+  height: 280px;
+  width: 60%;
+  position: absolute;
+  right: -4px;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  display: flex;
+  justify-content: start;
+  padding-left: 70px;
+}
+.photo-profile img {
+  margin-top: -172px;
+  height: 450px;
+  filter: drop-shadow(1px 1px 10px rgb(7, 0, 99));
+}
+main * {
+  /* border: solid 1px white; */
+}
+
+@media screen and (min-width: 600px) {
+  .content .role p {
+    margin-left: 6%;
+    /* color: blue; */
+  }
+}
+@media screen and (max-width: 800px) {
+  .content .photo-profile {
+    width: 80%;
+  }
+  .photo-profile img {
+    margin-top: -152px;
+    height: 430px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content .photo-profile {
+    width: 95%;
+  }
+  .photo-profile img {
+    margin-top: -132px;
+    height: 410px;
+  }
+}

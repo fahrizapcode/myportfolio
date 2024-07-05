@@ -1,0 +1,78 @@
+* {
+  /* border: solid black 1px; */
+  box-sizing: border-box;
+}
+html {
+  background-color: black;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  background-image: url(../img/background.png);
+  margin: 0;
+  height: 5000px;
+  padding: 20px;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: aqua; */
+  height: 80px;
+}
+header nav {
+  background-color: transparent;
+  width: 560px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  border-radius: 10px;
+  height: 50px;
+  padding: 4px;
+  backdrop-filter: blur(200px);
+  border: 0.3px solid white;
+  transition: top 0.3s;
+  z-index: 999;
+}
+
+nav button {
+  background: none;
+  border: none;
+  width: 108px;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 6px;
+  /* border: grey 1px solid; */
+}
+nav button a {
+  color: white;
+  text-decoration: none;
+}
+nav button:hover a {
+  color: black;
+}
+nav button:hover {
+  background-color: white;
+}
+.hidden {
+  top: -50px;
+}
+
+@media screen and (max-width: 600px) {
+  header nav {
+    width: 94%;
+    height: 46px;
+  }
+  nav button a {
+    font-size: 14px;
+    height: 38px;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
