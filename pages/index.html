@@ -32,12 +32,21 @@
     <main>
       <div class="content" id="profile">
         <div class="role">
-          <audio autoplay>
+          <audio id="myAudio" controls style="display: none">
             <source
               src="https://ia601504.us.archive.org/32/items/bloodymary_202407/bloodymary.mp3"
               type="audio/mp3"
             />
           </audio>
+
+          <script>
+            let audio = document.getElementById("myAudio");
+            let profile = document.getElementById("header");
+
+            profile.addEventListener("click", function () {
+              audio.play();
+            });
+          </script>
           <p>Mohammad Fahriza Pratama</p>
           <p style="font-size: 14px">on the road to becoming a</p>
           <p>Fullstack Developer</p>
